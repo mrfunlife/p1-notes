@@ -1,0 +1,6 @@
+framework module Pods_FunlifeNotes {
+  umbrella header "Pods-FunlifeNotes-umbrella.h"
+
+  export *
+  module * { export * }
+}
