@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuNaviView" customModule="FunlifeNotes" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="JOt-iE-ccR"/>
+                <outlet property="itemNavLeftOne" destination="G4l-WU-fn6" id="Hjc-1e-mpf"/>
+                <outlet property="itemNavLeftTwo" destination="pap-rx-273" id="xBy-XR-BUh"/>
+                <outlet property="itemNavRighTwo" destination="TjV-ds-LWS" id="bT8-Pq-Sk0"/>
+                <outlet property="itemNavRightOne" destination="qUI-He-bYv" id="vIe-Jh-qqI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rose" translatesAutoresizingMaskIntoConstraints="NO" id="X58-nk-a8M">
+                    <rect key="frame" x="170" y="11.5" width="35" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="eWo-mi-CUm"/>
+                        <constraint firstAttribute="width" constant="35" id="txC-Yh-dWj"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUI-He-bYv" customClass="ItemNavView" customModule="FunlifeNotes" customModuleProvider="target">
+                    <rect key="frame" x="325" y="0.0" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qUI-He-bYv" secondAttribute="height" multiplier="1:1" id="e4Z-Mr-ALv"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TjV-ds-LWS" customClass="ItemNavView" customModule="FunlifeNotes" customModuleProvider="target">
+                    <rect key="frame" x="270" y="0.0" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="TjV-ds-LWS" secondAttribute="height" id="Wot-da-g1f"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G4l-WU-fn6" customClass="ItemNavView" customModule="FunlifeNotes" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="G4l-WU-fn6" secondAttribute="height" multiplier="1:1" id="PDg-3S-faj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pap-rx-273" customClass="ItemNavView" customModule="FunlifeNotes" customModuleProvider="target">
+                    <rect key="frame" x="55" y="0.0" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pap-rx-273" secondAttribute="height" id="Nzq-Cd-mNG"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Nzq-Cd-mNG"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pap-rx-273" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7D7-28-Rg0"/>
+                <constraint firstItem="qUI-He-bYv" firstAttribute="leading" secondItem="TjV-ds-LWS" secondAttribute="trailing" constant="5" id="9Qm-Ll-sxb"/>
+                <constraint firstItem="qUI-He-bYv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Dvi-en-rXJ"/>
+                <constraint firstAttribute="bottom" secondItem="G4l-WU-fn6" secondAttribute="bottom" id="Gjg-pi-ill"/>
+                <constraint firstItem="X58-nk-a8M" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JRC-83-MwM"/>
+                <constraint firstItem="TjV-ds-LWS" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="LaL-4s-xmW"/>
+                <constraint firstItem="G4l-WU-fn6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LxD-lg-wGn"/>
+                <constraint firstItem="pap-rx-273" firstAttribute="width" secondItem="pap-rx-273" secondAttribute="height" id="SfF-C6-U80"/>
+                <constraint firstItem="pap-rx-273" firstAttribute="leading" secondItem="G4l-WU-fn6" secondAttribute="trailing" constant="5" id="SgE-k1-6lq"/>
+                <constraint firstItem="X58-nk-a8M" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="T1Q-DA-S9p"/>
+                <constraint firstAttribute="trailing" secondItem="qUI-He-bYv" secondAttribute="trailing" id="dHv-di-IVM"/>
+                <constraint firstItem="G4l-WU-fn6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kEO-BK-RK2"/>
+                <constraint firstItem="TjV-ds-LWS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kxz-9d-4WG"/>
+                <constraint firstItem="pap-rx-273" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="lRj-Lj-HG8"/>
+                <constraint firstItem="TjV-ds-LWS" firstAttribute="width" secondItem="TjV-ds-LWS" secondAttribute="height" id="na5-zt-TUH"/>
+                <constraint firstAttribute="bottom" secondItem="qUI-He-bYv" secondAttribute="bottom" id="wIj-uL-g21"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="na5-zt-TUH"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rose" width="100" height="100"/>
+    </resources>
+</document>

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MSm-xn-Zug">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="gmY-l1-NKe">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="b22-3a-7TJ" customClass="HomeViewController" customModule="FunlifeNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P38-Ak-FWM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caP-eC-Z8q" customClass="GradientView" customModule="FunlifeNotes" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqV-1d-Qh7" customClass="MenuNaviView" customModule="FunlifeNotes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="f8I-fi-9Ee"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bqV-1d-Qh7" secondAttribute="bottom" id="0iY-ha-sAZ"/>
+                                    <constraint firstItem="bqV-1d-Qh7" firstAttribute="leading" secondItem="caP-eC-Z8q" secondAttribute="leading" id="CTD-Fc-m4t"/>
+                                    <constraint firstAttribute="trailing" secondItem="bqV-1d-Qh7" secondAttribute="trailing" id="I4S-lV-Mu1"/>
+                                    <constraint firstAttribute="height" constant="60" id="qB3-6c-gW3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.29803921570000003" green="0.74117647060000003" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.086274509799999996" green="0.38823529410000002" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCa-99-ieT" customClass="GradientView" customModule="FunlifeNotes" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="60" width="375" height="572"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.086274509799999996" green="0.38823529410000002" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.29803921568627451" green="0.74117647058823533" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="0gq-mr-a5J" kind="embed" identifier="SEGUE_CONTAINER_VIEW" id="q6B-no-uZr"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4w-hC-obr" customClass="MenuBottomBarView" customModule="FunlifeNotes" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="632" width="375" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="m5S-iu-4LI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="caP-eC-Z8q" firstAttribute="top" secondItem="P38-Ak-FWM" secondAttribute="top" id="0zT-sr-KWN"/>
+                            <constraint firstItem="caP-eC-Z8q" firstAttribute="trailing" secondItem="50y-Oy-SBd" secondAttribute="trailing" id="Bww-p7-2qf"/>
+                            <constraint firstItem="50y-Oy-SBd" firstAttribute="trailing" secondItem="w4w-hC-obr" secondAttribute="trailing" id="Dlk-vw-LfR"/>
+                            <constraint firstItem="aCa-99-ieT" firstAttribute="top" secondItem="caP-eC-Z8q" secondAttribute="bottom" id="E09-34-lrk"/>
+                            <constraint firstItem="caP-eC-Z8q" firstAttribute="leading" secondItem="50y-Oy-SBd" secondAttribute="leading" id="M3j-6r-1ct"/>
+                            <constraint firstItem="aCa-99-ieT" firstAttribute="leading" secondItem="50y-Oy-SBd" secondAttribute="leading" id="Nu4-Kr-mKB"/>
+                            <constraint firstItem="w4w-hC-obr" firstAttribute="top" secondItem="aCa-99-ieT" secondAttribute="bottom" id="fTi-2K-8zc"/>
+                            <constraint firstItem="w4w-hC-obr" firstAttribute="leading" secondItem="50y-Oy-SBd" secondAttribute="leading" id="hGJ-gd-0My"/>
+                            <constraint firstItem="aCa-99-ieT" firstAttribute="trailing" secondItem="50y-Oy-SBd" secondAttribute="trailing" id="mAx-6L-Lw9"/>
+                            <constraint firstItem="50y-Oy-SBd" firstAttribute="bottom" secondItem="w4w-hC-obr" secondAttribute="bottom" id="ovH-i9-jzj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="50y-Oy-SBd"/>
+                    </view>
+                    <connections>
+                        <outlet property="cotainerView" destination="aCa-99-ieT" id="A9W-W0-1aX"/>
+                        <outlet property="csHeightBottomMenu" destination="m5S-iu-4LI" id="fOa-yS-iGR"/>
+                        <outlet property="myMenuBottom" destination="w4w-hC-obr" id="35Q-bD-5R0"/>
+                        <outlet property="myMenuNav" destination="bqV-1d-Qh7" id="HsP-TK-mNb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAj-jV-zay" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1032.8" y="-1051.1244377811095"/>
+        </scene>
+        <!--PasscodeVC-->
+        <scene sceneID="e6S-4b-7GK">
+            <objects>
+                <viewController id="MSm-xn-Zug" customClass="PasscodeVC" customModule="FunlifeNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w1H-OJ-LfY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-passcode" translatesAutoresizingMaskIntoConstraints="NO" id="vzK-JH-H5k">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HEx-lD-mWz">
+                                <rect key="frame" x="187.5" y="126.5" width="0.0" height="15"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="0.5" id="PwW-Ly-qh0"/>
+                                    <constraint firstAttribute="height" constant="15" id="Rob-Cs-4qa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wt1-8d-6ak" customClass="CodeView" customModule="FunlifeNotes" customModuleProvider="target">
+                                <rect key="frame" x="128.5" y="126.5" width="15" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wt1-8d-6ak" secondAttribute="height" multiplier="1:1" id="JJS-b9-hJd"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WEN-0i-s1Y" customClass="CodeView" customModule="FunlifeNotes" customModuleProvider="target">
+                                <rect key="frame" x="163.5" y="126.5" width="15" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WEN-0i-s1Y" secondAttribute="height" multiplier="1:1" id="P9B-zv-Hfy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfD-gX-0pn" customClass="CodeView" customModule="FunlifeNotes" customModuleProvider="target">
+                                <rect key="frame" x="197.5" y="126.5" width="15" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tfD-gX-0pn" secondAttribute="height" multiplier="1:1" id="4Jf-rO-AlA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k89-qK-XBr" customClass="CodeView" customModule="FunlifeNotes" customModuleProvider="target">
+                                <rect key="frame" x="232.5" y="126.5" width="15" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="k89-qK-XBr" secondAttribute="height" multiplier="1:1" id="YwO-d7-Vqv"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter PassCode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzw-IY-hKb">
+                                <rect key="frame" x="112" y="80" width="151" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.99643083759999995" green="0.99643083759999995" blue="0.99643083759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="imN-e7-qmm">
+                                <rect key="frame" x="54" y="181.5" width="267.5" height="73"/>
+                                <subviews>
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnp-Pb-XWI" customClass="NumberPadView" customModule="FunlifeNotes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cid-6N-avD" customClass="NumberPadLabel" customModule="FunlifeNotes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Cid-6N-avD" firstAttribute="top" secondItem="wnp-Pb-XWI" secondAttribute="top" id="GFo-w8-Qnu"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cid-6N-avD" secondAttribute="trailing" id="JDJ-eM-hAK"/>
+                                            <constraint firstAttribute="width" secondItem="wnp-Pb-XWI" secondAttribute="height" multiplier="1:1" id="WeQ-TW-gxM"/>
+                                            <constraint firstItem="Cid-6N-avD" firstAttribute="leading" secondItem="wnp-Pb-XWI" secondAttribute="leading" id="X1S-om-Gue"/>
+                                            <constraint firstAttribute="bottom" secondItem="Cid-6N-avD" secondAttribute="bottom" id="YKf-a2-UQh"/>
+                                            <constraint firstAttribute="width" constant="70" id="lXW-aR-b6D"/>
+                                            <constraint firstAttribute="height" constant="60" id="oZ3-68-IAc"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="lXW-aR-b6D"/>
+                                                <exclude reference="oZ3-68-IAc"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzI-sX-Ydp" customClass="NumberPadView" customModule="FunlifeNotes" customModuleProvider="target">
+                                        <rect key="frame" x="97.5" y="0.0" width="72.5" height="72.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B39-KU-QPU" customClass="NumberPadLabel" customModule="FunlifeNotes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="B39-KU-QPU" secondAttribute="trailing" id="52t-aj-dCF"/>
+                                            <constraint firstAttribute="bottom" secondItem="B39-KU-QPU" secondAttribute="bottom" id="clH-kZ-cew"/>
+                                            <constraint firstItem="B39-KU-QPU" firstAttribute="leading" secondItem="xzI-sX-Ydp" secondAttribute="leading" id="ioI-8j-jMf"/>
+                                            <constraint firstItem="B39-KU-QPU" firstAttribute="top" secondItem="xzI-sX-Ydp" secondAttribute="top" id="iyx-CU-Ta3"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gqb-C1-V7a" customClass="NumberPadView" customModule="FunlifeNotes" customModuleProvider="target">
+                                        <rect key="frame" x="195" y="0.0" width="72.5" height="72.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsT-la-T9u" customClass="NumberPadLabel" customModule="FunlifeNotes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="gsT-la-T9u" secondAttribute="trailing" id="QFG-FV-ma7"/>
+                                            <constraint firstItem="gsT-la-T9u" firstAttribute="leading" secondItem="Gqb-C1-V7a" secondAttribute="leading" id="Tem-Sf-PL8"/>
+                                            <constraint firstAttribute="bottom" secondItem="gsT-la-T9u" secondAttribute="bottom" id="m5P-Jv-kms"/>
+                                            <constraint firstItem="gsT-la-T9u" firstAttribute="top" secondItem="Gqb-C1-V7a" secondAttribute="top" id="tEI-20-fcQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0099468241870000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Gqb-C1-V7a" firstAttribute="top" secondItem="imN-e7-qmm" secondAttribute="top" id="5I1-yA-MZy"/>
+                                    <constraint firstItem="wnp-Pb-XWI" firstAttribute="top" secondItem="imN-e7-qmm" secondAttribute="top" id="HhR-Vk-FRc"/>
+                                    <constraint firstItem="Gqb-C1-V7a" firstAttribute="height" secondItem="xzI-sX-Ydp" secondAttribute="height" id="KcK-2I-OCx"/>
+                                    <constraint firstAttribute="width" constant="200" id="MiT-JZ-b8J"/>
+                                    <constraint firstItem="xzI-sX-Ydp" firstAttribute="width" secondItem="wnp-Pb-XWI" secondAttribute="width" id="Myc-rw-Wo7"/>
+                                    <constraint firstItem="wnp-Pb-XWI" firstAttribute="leading" secondItem="imN-e7-qmm" secondAttribute="leading" id="NEf-Ai-Epm"/>
+                                    <constraint firstAttribute="height" constant="60" id="UWb-aE-7QN"/>
+                                    <constraint firstItem="Gqb-C1-V7a" firstAttribute="width" secondItem="xzI-sX-Ydp" secondAttribute="width" id="cMv-pP-5Lf"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gqb-C1-V7a" secondAttribute="trailing" id="oz8-Sh-BOO"/>
+                                    <constraint firstItem="xzI-sX-Ydp" firstAttribute="height" secondItem="wnp-Pb-XWI" secondAttribute="height" id="xve-8P-OfY"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MiT-JZ-b8J"/>
+                                        <exclude reference="UWb-aE-7QN"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="mtU-hF-y1K">
+                                <rect key="frame" x="54" y="279.5" width="267.5" height="73"/>
+                                <subviews>
+                                    <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdl-V3-sc4" customClass="NumberPadView" customModule="FunlifeNotes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="73"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBe-qo-x5b" customClass="NumberPadLabel" customModule="FunlifeNotes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="73"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wdl-V3-sc4" secondAttribute="height" multiplier="1:1" id="8NJ-6C-bir"/>
+                                            <constraint firstAttribute="width" constant="70" id="VSV-Ji-bnA"/>
+                                            <constraint firstItem="cBe-qo-x5b" firstAttribute="leading" secondItem="wdl-V3-sc4" secondAttribute="leading" id="Y4c-Ul-wpO"/>
+                                            <constraint firstAttribute="bottom" secondItem="cBe-qo-x5b" secondAttribute="bottom" id="ZKe-3i-mke"/>
+                                            <constraint firstItem="cBe-qo-x5b" firstAttribute="top" secondItem="wdl-V3-sc4" secondAttribute="top" id="aCr-g8-69o"/>
+                                            <constraint firstAttribute="trailing" secondItem="cBe-qo-x5b" secondAttribute="trailing" id="hG7-SX-FsW"/>
+                                            <constraint firstAttribute="height" constant="60" id="i7n-1M-h17"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="VSV-Ji-bnA"/>
+                                                <exclude reference="i7n-1M-h17"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqL-FA-yuU" customClass="NumberPadView" customModule="FunlifeNotes" customModuleProvider="target">
+                                        <rect key="frame" x="97.5" y="0.0" width="72.5" height="73"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftb-F4-POj" customClass="NumberPadLabel" customModule="FunlifeNotes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="73"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ftb-F4-POj" secondAttribute="trailing" id="07w-qo-Ia4"/>
+                                            <constraint firstAttribute="bottom" secondItem="ftb-F4-POj" secondAttribute="bottom" id="2ng-45-ly0"/>
+                                            <constraint firstItem="ftb-F4-POj" firstAttribute="leading" secondItem="gqL-FA-yuU" secondAttribute="leading" id="CAa-Bc-UtW"/>
+                                            <constraint firstItem="ftb-F4-POj" firstAttribute="top" secondItem="gqL-FA-yuU" secondAttribute="top" id="hIm-Tm-hLM"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qn6-Iu-l9b" customClass="NumberPadView" customModule="FunlifeNotes" customModuleProvider="target">
+                                        <rect key="frame" x="195" y="0.0" width="72.5" height="73"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NM-aS-6bg" customClass="NumberPadLabel" customModule="FunlifeNotes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="73"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="9NM-aS-6bg" firstAttribute="top" secondItem="Qn6-Iu-l9b" secondAttribute="top" id="CHu-dF-4me"/>
+                                            <constraint firstAttribute="bottom" secondItem="9NM-aS-6bg" secondAttribute="bottom" id="T0n-lW-stg"/>
+                                            <constraint firstAttribute="trailing" secondItem="9NM-aS-6bg" secondAttribute="trailing" id="sFv-eI-Gh7"/>
+                                            <constraint firstItem="9NM-aS-6bg" firstAttribute="leading" secondItem="Qn6-Iu-l9b" secondAttribute="leading" id="sHi-l2-CkA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0099468241870000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Qn6-Iu-l9b" firstAttribute="top" secondItem="mtU-hF-y1K" secondAttribute="top" id="1Gk-HZ-KaO"/>
+                                    <constraint firstAttribute="width" constant="200" id="EmI-n9-pPr"/>
+                                    <constraint firstItem="Qn6-Iu-l9b" firstAttribute="height" secondItem="gqL-FA-yuU" secondAttribute="height" id="UHh-Nw-igz"/>
+                                    <constraint firstItem="gqL-FA-yuU" firstAttribute="height" secondItem="wdl-V3-sc4" secondAttribute="height" id="WK2-QF-oPK"/>
+                                    <constraint firstItem="wdl-V3-sc4" firstAttribute="leading" secondItem="mtU-hF-y1K" secondAttribute="leading" id="Z9z-ac-G3L"/>
+                                    <constraint firstItem="Qn6-Iu-l9b" firstAttribute="width" secondItem="gqL-FA-yuU" secondAttribute="width" id="hQh-5g-VaB"/>
+                                    <constraint firstItem="gqL-FA-yuU" firstAttribute="width" secondItem="wdl-V3-sc4" secondAttribute="width" id="mVP-g7-OFn"/>
+                                    <constraint firstAttribute="height" constant="60" id="rNn-7G-qjl"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qn6-Iu-l9b" secondAttribute="trailing" id="rPb-qn-2M7"/>
+                                    <constraint firstItem="wdl-V3-sc4" firstAttribute="top" secondItem="mtU-hF-y1K" secondAttribute="top" id="z7u-8r-uXa"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EmI-n9-pPr"/>
+                                        <exclude reference="rNn-7G-qjl"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="1sZ-YC-Q3u">
+                                <rect key="frame" x="54" y="377.5" width="267.5" height="73.5"/>
+                                <subviews>
+                                    <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZkR-ds-27U" customClass="NumberPadView" customModule="FunlifeNotes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="73"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uay-si-iyk" customClass="NumberPadLabel" customModule="FunlifeNotes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="73"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="uay-si-iyk" secondAttribute="bottom" id="1eq-Zt-WJR"/>
+                                            <constraint firstAttribute="width" secondItem="ZkR-ds-27U" secondAttribute="height" multiplier="1:1" id="Ept-w8-DK4"/>
+                                            <constraint firstAttribute="trailing" secondItem="uay-si-iyk" secondAttribute="trailing" id="SpX-3c-Klo"/>
+                                            <constraint firstAttribute="width" constant="70" id="Ww1-kV-PkW"/>
+                                            <constraint firstAttribute="height" constant="60" id="Y21-VN-Gbm"/>
+                                            <constraint firstItem="uay-si-iyk" firstAttribute="leading" secondItem="ZkR-ds-27U" secondAttribute="leading" id="dt2-aU-RHI"/>
+                                            <constraint firstItem="uay-si-iyk" firstAttribute="top" secondItem="ZkR-ds-27U" secondAttribute="top" id="ryQ-rh-beI"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Ww1-kV-PkW"/>
+                                                <exclude reference="Y21-VN-Gbm"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFj-aU-wih" customClass="NumberPadView" customModule="FunlifeNotes" customModuleProvider="target">
+                                        <rect key="frame" x="97.5" y="0.0" width="72.5" height="73"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oc8-4S-mgx" customClass="NumberPadLabel" customModule="FunlifeNotes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="73"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Oc8-4S-mgx" secondAttribute="trailing" id="6EV-Pm-6ff"/>
+                                            <constraint firstItem="Oc8-4S-mgx" firstAttribute="leading" secondItem="DFj-aU-wih" secondAttribute="leading" id="Y8H-vd-8qv"/>
+                                            <constraint firstAttribute="bottom" secondItem="Oc8-4S-mgx" secondAttribute="bottom" id="chM-JP-lcJ"/>
+                                            <constraint firstItem="Oc8-4S-mgx" firstAttribute="top" secondItem="DFj-aU-wih" secondAttribute="top" id="eC1-Ws-Yxx"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ulr-oH-rWN" customClass="NumberPadView" customModule="FunlifeNotes" customModuleProvider="target">
+                                        <rect key="frame" x="195" y="0.0" width="72.5" height="73"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gY-32-sS2" customClass="NumberPadLabel" customModule="FunlifeNotes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="73"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="9gY-32-sS2" firstAttribute="leading" secondItem="ulr-oH-rWN" secondAttribute="leading" id="SQq-md-aHN"/>
+                                            <constraint firstAttribute="bottom" secondItem="9gY-32-sS2" secondAttribute="bottom" id="j9N-2g-KeL"/>
+                                            <constraint firstAttribute="trailing" secondItem="9gY-32-sS2" secondAttribute="trailing" id="jr8-tp-jfE"/>
+                                            <constraint firstItem="9gY-32-sS2" firstAttribute="top" secondItem="ulr-oH-rWN" secondAttribute="top" id="v6S-6v-OfB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0099468241870000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ZkR-ds-27U" firstAttribute="leading" secondItem="1sZ-YC-Q3u" secondAttribute="leading" id="20r-IQ-d65"/>
+                                    <constraint firstItem="DFj-aU-wih" firstAttribute="width" secondItem="ZkR-ds-27U" secondAttribute="width" id="AXn-rs-4Pj"/>
+                                    <constraint firstAttribute="height" constant="60" id="Ewk-Fr-xdr"/>
+                                    <constraint firstAttribute="trailing" secondItem="ulr-oH-rWN" secondAttribute="trailing" id="LrI-Zv-fQz"/>
+                                    <constraint firstItem="DFj-aU-wih" firstAttribute="height" secondItem="ZkR-ds-27U" secondAttribute="height" id="S76-jB-mb4"/>
+                                    <constraint firstAttribute="width" constant="200" id="Zin-h2-mpY"/>
+                                    <constraint firstItem="ulr-oH-rWN" firstAttribute="top" secondItem="1sZ-YC-Q3u" secondAttribute="top" id="kU7-YW-mwn"/>
+                                    <constraint firstItem="ulr-oH-rWN" firstAttribute="width" secondItem="DFj-aU-wih" secondAttribute="width" id="ofK-v7-lr3"/>
+                                    <constraint firstItem="ulr-oH-rWN" firstAttribute="height" secondItem="DFj-aU-wih" secondAttribute="height" id="srS-h9-xVO"/>
+                                    <constraint firstItem="ZkR-ds-27U" firstAttribute="top" secondItem="1sZ-YC-Q3u" secondAttribute="top" id="tlS-Q1-ESj"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ewk-Fr-xdr"/>
+                                        <exclude reference="Zin-h2-mpY"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ziH-q8-dLh" customClass="NumberPadView" customModule="FunlifeNotes" customModuleProvider="target">
+                                <rect key="frame" x="151" y="476" width="73" height="72.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuO-cH-mxC" customClass="NumberPadLabel" customModule="FunlifeNotes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="73" height="72.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FuO-cH-mxC" secondAttribute="trailing" id="ADW-M8-yeS"/>
+                                    <constraint firstItem="FuO-cH-mxC" firstAttribute="leading" secondItem="ziH-q8-dLh" secondAttribute="leading" id="Hkc-vk-677"/>
+                                    <constraint firstAttribute="bottom" secondItem="FuO-cH-mxC" secondAttribute="bottom" id="Rdn-N6-O8A"/>
+                                    <constraint firstItem="FuO-cH-mxC" firstAttribute="top" secondItem="ziH-q8-dLh" secondAttribute="top" id="xgH-bG-OZg"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTR-zF-sR6">
+                                <rect key="frame" x="310" y="617" width="45" height="30"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteNumber:" destination="MSm-xn-Zug" eventType="touchUpInside" id="WxK-6S-Dzm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1sZ-YC-Q3u" firstAttribute="width" secondItem="mtU-hF-y1K" secondAttribute="width" id="1ge-1l-Ndy"/>
+                            <constraint firstItem="tfD-gX-0pn" firstAttribute="leading" secondItem="HEx-lD-mWz" secondAttribute="trailing" constant="9.5" id="1wk-y9-yOk"/>
+                            <constraint firstItem="wnp-Pb-XWI" firstAttribute="width" secondItem="w1H-OJ-LfY" secondAttribute="width" multiplier="65/335" id="2yM-Cv-y32"/>
+                            <constraint firstItem="wt1-8d-6ak" firstAttribute="width" secondItem="wt1-8d-6ak" secondAttribute="height" multiplier="1:1" id="47i-2f-8H2"/>
+                            <constraint firstItem="WEN-0i-s1Y" firstAttribute="bottom" secondItem="HEx-lD-mWz" secondAttribute="bottom" id="6Ss-oG-AEk"/>
+                            <constraint firstItem="HEx-lD-mWz" firstAttribute="leading" secondItem="WEN-0i-s1Y" secondAttribute="trailing" constant="9.5" id="7iz-rd-V33"/>
+                            <constraint firstItem="vzK-JH-H5k" firstAttribute="top" secondItem="w1H-OJ-LfY" secondAttribute="top" id="9Ss-j6-7Rn"/>
+                            <constraint firstItem="Hzw-IY-hKb" firstAttribute="centerX" secondItem="w1H-OJ-LfY" secondAttribute="centerX" id="Ai4-iL-1Fy"/>
+                            <constraint firstItem="ziH-q8-dLh" firstAttribute="top" secondItem="1sZ-YC-Q3u" secondAttribute="bottom" constant="25" id="D0s-2Z-6Qk"/>
+                            <constraint firstItem="1sZ-YC-Q3u" firstAttribute="top" secondItem="mtU-hF-y1K" secondAttribute="bottom" constant="25" id="E1t-mF-yCl"/>
+                            <constraint firstItem="yfa-Lu-3kU" firstAttribute="trailing" secondItem="vzK-JH-H5k" secondAttribute="trailing" id="E7K-tQ-yeh"/>
+                            <constraint firstItem="WEN-0i-s1Y" firstAttribute="leading" secondItem="wt1-8d-6ak" secondAttribute="trailing" constant="20" id="Jk5-T8-eXD"/>
+                            <constraint firstItem="HEx-lD-mWz" firstAttribute="top" secondItem="Hzw-IY-hKb" secondAttribute="bottom" constant="20" id="L3h-s9-iXi"/>
+                            <constraint firstItem="vzK-JH-H5k" firstAttribute="leading" secondItem="yfa-Lu-3kU" secondAttribute="leading" id="OyM-2c-oU1"/>
+                            <constraint firstItem="k89-qK-XBr" firstAttribute="width" secondItem="k89-qK-XBr" secondAttribute="height" multiplier="1:1" id="R8l-dA-kYd"/>
+                            <constraint firstItem="yfa-Lu-3kU" firstAttribute="trailing" secondItem="TTR-zF-sR6" secondAttribute="trailing" constant="20" id="RK5-w8-zyd"/>
+                            <constraint firstItem="imN-e7-qmm" firstAttribute="top" secondItem="k89-qK-XBr" secondAttribute="bottom" constant="40" id="RRn-oZ-PfZ"/>
+                            <constraint firstItem="mtU-hF-y1K" firstAttribute="height" secondItem="imN-e7-qmm" secondAttribute="height" id="So7-xg-h1X"/>
+                            <constraint firstItem="ziH-q8-dLh" firstAttribute="height" secondItem="wnp-Pb-XWI" secondAttribute="height" id="TiI-3i-VqX"/>
+                            <constraint firstItem="mtU-hF-y1K" firstAttribute="top" secondItem="imN-e7-qmm" secondAttribute="bottom" constant="25" id="TvI-H3-yJa"/>
+                            <constraint firstItem="k89-qK-XBr" firstAttribute="top" secondItem="HEx-lD-mWz" secondAttribute="top" id="XRK-Jb-5IR"/>
+                            <constraint firstItem="k89-qK-XBr" firstAttribute="bottom" secondItem="HEx-lD-mWz" secondAttribute="bottom" id="Z50-9y-QhU"/>
+                            <constraint firstItem="vzK-JH-H5k" firstAttribute="centerX" secondItem="w1H-OJ-LfY" secondAttribute="centerX" id="ZAW-sh-PiH"/>
+                            <constraint firstItem="wt1-8d-6ak" firstAttribute="bottom" secondItem="HEx-lD-mWz" secondAttribute="bottom" id="bDG-SZ-3Ys"/>
+                            <constraint firstItem="imN-e7-qmm" firstAttribute="centerY" secondItem="w1H-OJ-LfY" secondAttribute="centerY" id="eOQ-Cv-dfH"/>
+                            <constraint firstItem="1sZ-YC-Q3u" firstAttribute="height" secondItem="mtU-hF-y1K" secondAttribute="height" id="fIF-YO-LEY"/>
+                            <constraint firstItem="mtU-hF-y1K" firstAttribute="centerX" secondItem="w1H-OJ-LfY" secondAttribute="centerX" id="fou-gT-L2r"/>
+                            <constraint firstItem="tfD-gX-0pn" firstAttribute="width" secondItem="tfD-gX-0pn" secondAttribute="height" multiplier="1:1" id="gMK-Yl-N3z"/>
+                            <constraint firstItem="1sZ-YC-Q3u" firstAttribute="centerX" secondItem="w1H-OJ-LfY" secondAttribute="centerX" id="gYM-ln-qMR"/>
+                            <constraint firstItem="HEx-lD-mWz" firstAttribute="centerX" secondItem="w1H-OJ-LfY" secondAttribute="centerX" id="igg-hj-dhm"/>
+                            <constraint firstItem="mtU-hF-y1K" firstAttribute="width" secondItem="imN-e7-qmm" secondAttribute="width" id="je1-2c-MEx"/>
+                            <constraint firstItem="WEN-0i-s1Y" firstAttribute="top" secondItem="HEx-lD-mWz" secondAttribute="top" id="kGO-X7-3u9"/>
+                            <constraint firstItem="wt1-8d-6ak" firstAttribute="top" secondItem="HEx-lD-mWz" secondAttribute="top" id="oaF-09-bef"/>
+                            <constraint firstItem="tfD-gX-0pn" firstAttribute="bottom" secondItem="HEx-lD-mWz" secondAttribute="bottom" id="ppp-FJ-XoG"/>
+                            <constraint firstItem="vzK-JH-H5k" firstAttribute="bottom" secondItem="w1H-OJ-LfY" secondAttribute="bottom" id="q9R-HK-6G8"/>
+                            <constraint firstItem="k89-qK-XBr" firstAttribute="leading" secondItem="tfD-gX-0pn" secondAttribute="trailing" constant="20" id="qfR-Nr-tIz"/>
+                            <constraint firstItem="yfa-Lu-3kU" firstAttribute="bottom" secondItem="TTR-zF-sR6" secondAttribute="bottom" constant="20" id="rXd-ZR-nyR"/>
+                            <constraint firstItem="tfD-gX-0pn" firstAttribute="top" secondItem="HEx-lD-mWz" secondAttribute="top" id="rY4-ob-Fda"/>
+                            <constraint firstItem="ziH-q8-dLh" firstAttribute="centerX" secondItem="w1H-OJ-LfY" secondAttribute="centerX" id="vrc-7a-nzs"/>
+                            <constraint firstItem="imN-e7-qmm" firstAttribute="centerX" secondItem="w1H-OJ-LfY" secondAttribute="centerX" id="ylz-Sv-bsy"/>
+                            <constraint firstItem="ziH-q8-dLh" firstAttribute="width" secondItem="wnp-Pb-XWI" secondAttribute="width" id="yyh-mA-t7W"/>
+                            <constraint firstItem="Hzw-IY-hKb" firstAttribute="top" secondItem="yfa-Lu-3kU" secondAttribute="top" constant="60" id="z6l-UP-D6b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yfa-Lu-3kU"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="47i-2f-8H2"/>
+                                <exclude reference="eOQ-Cv-dfH"/>
+                                <exclude reference="gMK-Yl-N3z"/>
+                                <exclude reference="R8l-dA-kYd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="codeView1" destination="wt1-8d-6ak" id="UYi-Wu-VtC"/>
+                        <outlet property="codeView2" destination="WEN-0i-s1Y" id="l4f-Vw-bTF"/>
+                        <outlet property="codeView3" destination="tfD-gX-0pn" id="xkd-zG-Rg5"/>
+                        <outlet property="codeView4" destination="k89-qK-XBr" id="kEN-tu-tfB"/>
+                        <outlet property="number0" destination="ziH-q8-dLh" id="Dxk-AD-TsR"/>
+                        <outlet property="number1" destination="wnp-Pb-XWI" id="hSF-LN-AOZ"/>
+                        <outlet property="number2" destination="xzI-sX-Ydp" id="oK9-df-0GQ"/>
+                        <outlet property="number3" destination="Gqb-C1-V7a" id="iXI-mp-Zn3"/>
+                        <outlet property="number4" destination="wdl-V3-sc4" id="c6a-i7-Ejz"/>
+                        <outlet property="number5" destination="gqL-FA-yuU" id="mA4-ap-CkF"/>
+                        <outlet property="number6" destination="Qn6-Iu-l9b" id="QUS-eV-8qs"/>
+                        <outlet property="number7" destination="ZkR-ds-27U" id="o5N-fp-RP4"/>
+                        <outlet property="number8" destination="DFj-aU-wih" id="9AD-kY-iN8"/>
+                        <outlet property="number9" destination="ulr-oH-rWN" id="AQi-dZ-0xG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fR7-MF-kI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="-1103"/>
+        </scene>
+        <!--Notes ListVC-->
+        <scene sceneID="P2r-88-KGL">
+            <objects>
+                <viewController storyboardIdentifier="NotesListVC" id="MKj-UL-WZe" customClass="NotesListVC" customModule="FunlifeNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TNa-Cx-OJl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="572"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wb5-CT-3Hl">
+                                <rect key="frame" x="0.0" y="20" width="375" height="552"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="MKj-UL-WZe" id="JNb-Zt-QrN"/>
+                                    <outlet property="delegate" destination="MKj-UL-WZe" id="hds-bK-Jkb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xuA-ep-pIy" firstAttribute="bottom" secondItem="Wb5-CT-3Hl" secondAttribute="bottom" id="HOL-8X-6LR"/>
+                            <constraint firstItem="xuA-ep-pIy" firstAttribute="trailing" secondItem="Wb5-CT-3Hl" secondAttribute="trailing" id="WRy-hZ-Fjx"/>
+                            <constraint firstItem="Wb5-CT-3Hl" firstAttribute="leading" secondItem="xuA-ep-pIy" secondAttribute="leading" id="Wf4-Y9-6gm"/>
+                            <constraint firstItem="Wb5-CT-3Hl" firstAttribute="top" secondItem="xuA-ep-pIy" secondAttribute="top" id="ktH-0h-eYt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xuA-ep-pIy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="puR-nP-k6L"/>
+                    <connections>
+                        <outlet property="tableView" destination="Wb5-CT-3Hl" id="cjM-VY-mne"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WXu-xP-i1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2612" y="-1093.4032983508246"/>
+        </scene>
+        <!--My Navigation Controller-->
+        <scene sceneID="uEU-rJ-Ce9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="0gq-mr-a5J" customClass="MyNavigationController" customModule="FunlifeNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QYE-O2-pK8">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MKj-UL-WZe" kind="relationship" relationship="rootViewController" id="e6a-XN-Xwm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1VI-Xw-jxD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750.4000000000001" y="-1093.8530734632684"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg-passcode" width="375" height="668"/>
+    </resources>
+</document>
