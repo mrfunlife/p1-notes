@@ -42,4 +42,8 @@ extension UIViewController: ResponseUIViewController {
         }
         return controller
     }
+    
+    func setBackgroundAlpha(){
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+    }
 }

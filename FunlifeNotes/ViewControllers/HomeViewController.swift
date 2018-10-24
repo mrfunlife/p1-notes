@@ -8,10 +8,9 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController, MenuBottomBarViewDelegate {
+class HomeViewController: BaseViewController, MenuBottomBarViewDelegate, MenuNaviDelegate {
 
     fileprivate let SEGUE_CONTAINER_VIEW = "SEGUE_CONTAINER_VIEW"
-
     @IBOutlet weak var myMenuNav: MenuNaviView!
     @IBOutlet weak var myMenuBottom: MenuBottomBarView!
     @IBOutlet weak var cotainerView: UIView!
@@ -23,6 +22,7 @@ class HomeViewController: BaseViewController, MenuBottomBarViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         myMenuBottom.delegate = self
+        myMenuNav.delegate = self
         myMenuBottom.addAnimation()
         myMenuNav.setImageItem()
     }
@@ -34,18 +34,23 @@ class HomeViewController: BaseViewController, MenuBottomBarViewDelegate {
             }
         }
     }
-
-    func addIconTitle() -> UIView{
-        let image : UIImage = UIImage(named: "menu_nav_logo.png")!
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
-        imageView.contentMode = .scaleAspectFit
-        imageView.image = image
-        return imageView
-    }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
+    func selectTypeMenuTop(type: MenuTop) {
+        Dlog(msg: type)
+        switch type {
+        case .home:
+            break
+        case .search:
+            break
+        case .alarm:
+            break
+        case .create:
+            let vc = NotesCreateVC.fromStoryboard(CREATE_STORYBOARD)
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case .none:
+            break
+        }
     }
     
     func selectMenuBottomBar(typeMenu: MenuBottom) {

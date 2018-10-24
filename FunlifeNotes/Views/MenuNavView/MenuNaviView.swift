@@ -9,12 +9,17 @@
 import Foundation
 import UIKit
 
-class MenuNaviView: UIView {
+class MenuNaviView: UIView, MenuNaviDelegate {
+    
+    func selectTypeMenuTop(type: MenuTop) {
+       delegate?.selectTypeMenuTop(type: type)
+    }
+    weak var delegate: MenuNaviDelegate?
     @IBOutlet weak var contentView: UIView!
-    @IBOutlet weak var itemNavLeftTwo: ItemNavView!
-    @IBOutlet weak var itemNavLeftOne: ItemNavView!
-    @IBOutlet weak var itemNavRightOne: ItemNavView!
-    @IBOutlet weak var itemNavRighTwo: ItemNavView!
+    @IBOutlet weak var itemNavSearch: ItemNavView!
+    @IBOutlet weak var itemNavHome: ItemNavView!
+    @IBOutlet weak var itemNavCreate: ItemNavView!
+    @IBOutlet weak var itemNavAlarm: ItemNavView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -34,9 +39,13 @@ class MenuNaviView: UIView {
     }
     
     func setImageItem() {
-       itemNavLeftOne.setImageItem(image: #imageLiteral(resourceName: "menu_nav_home"))
-       itemNavLeftTwo.setImageItem(image: #imageLiteral(resourceName: "menu_nav_search"))
-       itemNavRightOne.setImageItem(image: #imageLiteral(resourceName: "icons8-create-48"), item: .CREATE)
-       itemNavRighTwo.setImageItem(image: #imageLiteral(resourceName: "menu_nav_alarm"),item: .ALARM)
+       itemNavHome.initItem(image: #imageLiteral(resourceName: "menu_nav_home"))
+       itemNavHome.delegate = self
+       itemNavSearch.initItem(image: #imageLiteral(resourceName: "menu_nav_search"))
+       itemNavSearch.delegate = self
+       itemNavCreate.initItem(image: #imageLiteral(resourceName: "icons8-create-48"), item: .create)
+       itemNavCreate.delegate = self
+       itemNavAlarm.initItem(image: #imageLiteral(resourceName: "menu_nav_alarm"),item: .search)
+       itemNavAlarm.delegate = self
     }
 }

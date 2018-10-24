@@ -46,3 +46,17 @@ class GradientView: UIView {
         updateColors()
     }
 }
+
+extension UIView {
+    func pulsate() {
+        let pulse = CASpringAnimation(keyPath: "transform.scale")
+        pulse.duration = 0.3
+        pulse.fromValue = 0.95
+        pulse.toValue = 1.05
+        pulse.autoreverses = true
+        pulse.initialVelocity = 0.5
+        pulse.damping = 0.5
+        self.layer.add(pulse, forKey: "pulse")
+    }
+
+}

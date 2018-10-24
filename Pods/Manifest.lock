@@ -1,3 +1,15 @@
-PODFILE CHECKSUM: 3c3b0f2d2bbcdb73ad0871565c1e9462287ca37b
+PODS:
+  - BGTableViewRowActionWithImage (0.4.2)
+  - PopupDialog (0.6.1)
+
+DEPENDENCIES:
+  - BGTableViewRowActionWithImage
+  - PopupDialog
+
+SPEC CHECKSUMS:
+  BGTableViewRowActionWithImage: 3ea48f993aa6fc7159a8245ce495cda938b3243e
+  PopupDialog: 1bdd1efbfb49eb619a280faa9a3bbaac76f94120
+
+PODFILE CHECKSUM: 121c117ec6fcfa671fd0e21fec4f86c32da4a9f6
 
 COCOAPODS: 1.3.1

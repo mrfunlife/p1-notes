@@ -27,6 +27,7 @@ protocol MenuViewDelegate: class {
 class MenuView: UIView {
     weak var delegate: MenuViewDelegate?
     var typeMenu = MenuBottom.open
+    
     func addAnimation(){
         let gesture = UITapGestureRecognizer(target: self, action: #selector(selectMenuBottom))
         gesture.numberOfTapsRequired = 1
@@ -35,6 +36,7 @@ class MenuView: UIView {
     }
     
     @objc func selectMenuBottom() {
+        self.pulsate()
         switch self.tag {
         case 11:
             typeMenu = .open

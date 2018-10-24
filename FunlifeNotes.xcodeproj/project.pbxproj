@@ -15,6 +15,9 @@
 		842622102119B1FE009E4719 /* ItemNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426220F2119B1FE009E4719 /* ItemNavView.swift */; };
 		842622122119B207009E4719 /* ItemNavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842622112119B207009E4719 /* ItemNavView.xib */; };
 		842622142119B3A0009E4719 /* UIImage+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842622132119B3A0009E4719 /* UIImage+EX.swift */; };
+		8429430C212462E300F85628 /* NotesDetailStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8429430B212462E300F85628 /* NotesDetailStoryBoard.storyboard */; };
+		8429430E212462FF00F85628 /* NotesDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429430D212462FF00F85628 /* NotesDetailVC.swift */; };
+		8430FA182161137200681733 /* GrowingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8430FA172161137200681733 /* GrowingTextView.swift */; };
 		843CCF20210C607D00123479 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CCF1F210C607D00123479 /* BaseViewController.swift */; };
 		843CCF23210C615D00123479 /* PasscodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CCF22210C615D00123479 /* PasscodeVC.swift */; };
 		843CCF28210C62E900123479 /* NotesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CCF27210C62E900123479 /* NotesListVC.swift */; };
@@ -25,14 +28,28 @@
 		843CCF37210C673F00123479 /* ViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CCF36210C673F00123479 /* ViewController+Ex.swift */; };
 		843CCF39210C67B200123479 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CCF38210C67B200123479 /* MyNavigationController.swift */; };
 		843CCF3B210C6E0900123479 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CCF3A210C6E0900123479 /* CustomView.swift */; };
+		8444B8702126C2EA00404B89 /* ViewImageDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444B86F2126C2EA00404B89 /* ViewImageDetails.swift */; };
+		8444B8722126C2F300404B89 /* ViewImageDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8444B8712126C2F300404B89 /* ViewImageDetails.xib */; };
+		8444B8762126D8C700404B89 /* ViewImageDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8444B8742126D8C700404B89 /* ViewImageDetailsCell.xib */; };
+		8469389621565318007EBD13 /* ViewContentNote.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8469389521565318007EBD13 /* ViewContentNote.xib */; };
+		8469389A215653E5007EBD13 /* ViewContentNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84693899215653E5007EBD13 /* ViewContentNote.swift */; };
+		8469389E215659EB007EBD13 /* NotesDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469389C215659EB007EBD13 /* NotesDetailCell.swift */; };
+		8480021D212055CC003D2F6B /* READ_ME.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480021C212055CC003D2F6B /* READ_ME.swift */; };
 		8486BF48210EDDA400AEF7C3 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8486BF47210EDDA400AEF7C3 /* SettingsVC.swift */; };
 		8486BF4A210EDE3E00AEF7C3 /* GlobalVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8486BF49210EDE3E00AEF7C3 /* GlobalVariable.swift */; };
 		848C6E1B20E90A6D00874D1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C6E1A20E90A6D00874D1F /* AppDelegate.swift */; };
 		848C6E2020E90A6D00874D1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848C6E1E20E90A6D00874D1F /* Main.storyboard */; };
 		848C6E2220E90A6D00874D1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848C6E2120E90A6D00874D1F /* Assets.xcassets */; };
 		848C6E2520E90A6D00874D1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848C6E2320E90A6D00874D1F /* LaunchScreen.storyboard */; };
+		84901DFB217F107A004AA6D0 /* ViewEditNoteSlide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84901DFA217F107A004AA6D0 /* ViewEditNoteSlide.xib */; };
+		84901DFD217F1083004AA6D0 /* ViewEditNoteSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84901DFC217F1083004AA6D0 /* ViewEditNoteSlide.swift */; };
 		8491C764211A96D500CAC08C /* NotesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491C762211A96D500CAC08C /* NotesListCell.swift */; };
 		8491C765211A96D500CAC08C /* NotesListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8491C763211A96D500CAC08C /* NotesListCell.xib */; };
+		84970D3621283D370048C78E /* NotesCreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84970D3521283D370048C78E /* NotesCreateVC.swift */; };
+		84970D3821283D580048C78E /* NotesCreateStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84970D3721283D580048C78E /* NotesCreateStoryBoard.storyboard */; };
+		8497873A211DB1F30075B254 /* MenuNotesListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84978739211DB1F30075B254 /* MenuNotesListCellView.swift */; };
+		8497873C211DB1FD0075B254 /* MenuNotesListCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8497873B211DB1FD0075B254 /* MenuNotesListCellView.xib */; };
+		84C23BDC2126A27E00AE9754 /* UILabel+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C23BDB2126A27D00AE9754 /* UILabel+Ex.swift */; };
 		84FBF806210F303900B00111 /* SettingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FBF805210F303900B00111 /* SettingStoryboard.storyboard */; };
 		84FBF808210F403100B00111 /* NotesObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FBF807210F403100B00111 /* NotesObj.swift */; };
 		84FBF80A210F44CD00B00111 /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FBF809210F44CD00B00111 /* UIView+Ex.swift */; };
@@ -51,6 +68,9 @@
 		8426220F2119B1FE009E4719 /* ItemNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemNavView.swift; sourceTree = "<group>"; };
 		842622112119B207009E4719 /* ItemNavView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemNavView.xib; sourceTree = "<group>"; };
 		842622132119B3A0009E4719 /* UIImage+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+EX.swift"; sourceTree = "<group>"; };
+		8429430B212462E300F85628 /* NotesDetailStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotesDetailStoryBoard.storyboard; sourceTree = "<group>"; };
+		8429430D212462FF00F85628 /* NotesDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetailVC.swift; sourceTree = "<group>"; };
+		8430FA172161137200681733 /* GrowingTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrowingTextView.swift; sourceTree = "<group>"; };
 		843CCF1F210C607D00123479 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		843CCF22210C615D00123479 /* PasscodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeVC.swift; sourceTree = "<group>"; };
 		843CCF27210C62E900123479 /* NotesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListVC.swift; sourceTree = "<group>"; };
@@ -61,6 +81,13 @@
 		843CCF36210C673F00123479 /* ViewController+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ex.swift"; sourceTree = "<group>"; };
 		843CCF38210C67B200123479 /* MyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		843CCF3A210C6E0900123479 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		8444B86F2126C2EA00404B89 /* ViewImageDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewImageDetails.swift; sourceTree = "<group>"; };
+		8444B8712126C2F300404B89 /* ViewImageDetails.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewImageDetails.xib; sourceTree = "<group>"; };
+		8444B8742126D8C700404B89 /* ViewImageDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewImageDetailsCell.xib; sourceTree = "<group>"; };
+		8469389521565318007EBD13 /* ViewContentNote.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewContentNote.xib; sourceTree = "<group>"; };
+		84693899215653E5007EBD13 /* ViewContentNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContentNote.swift; sourceTree = "<group>"; };
+		8469389C215659EB007EBD13 /* NotesDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetailCell.swift; sourceTree = "<group>"; };
+		8480021C212055CC003D2F6B /* READ_ME.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = READ_ME.swift; sourceTree = "<group>"; };
 		8486BF47210EDDA400AEF7C3 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		8486BF49210EDE3E00AEF7C3 /* GlobalVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariable.swift; sourceTree = "<group>"; };
 		848C6E1720E90A6D00874D1F /* FunlifeNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunlifeNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,8 +96,15 @@
 		848C6E2120E90A6D00874D1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		848C6E2420E90A6D00874D1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		848C6E2620E90A6D00874D1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84901DFA217F107A004AA6D0 /* ViewEditNoteSlide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewEditNoteSlide.xib; sourceTree = "<group>"; };
+		84901DFC217F1083004AA6D0 /* ViewEditNoteSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEditNoteSlide.swift; sourceTree = "<group>"; };
 		8491C762211A96D500CAC08C /* NotesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListCell.swift; sourceTree = "<group>"; };
 		8491C763211A96D500CAC08C /* NotesListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesListCell.xib; sourceTree = "<group>"; };
+		84970D3521283D370048C78E /* NotesCreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCreateVC.swift; sourceTree = "<group>"; };
+		84970D3721283D580048C78E /* NotesCreateStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotesCreateStoryBoard.storyboard; sourceTree = "<group>"; };
+		84978739211DB1F30075B254 /* MenuNotesListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNotesListCellView.swift; sourceTree = "<group>"; };
+		8497873B211DB1FD0075B254 /* MenuNotesListCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuNotesListCellView.xib; sourceTree = "<group>"; };
+		84C23BDB2126A27D00AE9754 /* UILabel+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Ex.swift"; sourceTree = "<group>"; };
 		84FBF805210F303900B00111 /* SettingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingStoryboard.storyboard; sourceTree = "<group>"; };
 		84FBF807210F403100B00111 /* NotesObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesObj.swift; sourceTree = "<group>"; };
 		84FBF809210F44CD00B00111 /* UIView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
@@ -137,6 +171,7 @@
 		843CCF24210C628E00123479 /* NotesListVC */ = {
 			isa = PBXGroup;
 			children = (
+				84978738211DB1C70075B254 /* MenuNotesListCellView */,
 				8491C761211A96AF00CAC08C /* NotesListCell */,
 				843CCF27210C62E900123479 /* NotesListVC.swift */,
 			);
@@ -146,6 +181,12 @@
 		843CCF25210C629900123479 /* NotesDetailVC */ = {
 			isa = PBXGroup;
 			children = (
+				84901DF9217F105A004AA6D0 /* ViewEditNote */,
+				84693894215652AF007EBD13 /* ViewContentNote */,
+				8444B86E2126C2AF00404B89 /* ViewImageDetails */,
+				8429430B212462E300F85628 /* NotesDetailStoryBoard.storyboard */,
+				8429430D212462FF00F85628 /* NotesDetailVC.swift */,
+				8469389C215659EB007EBD13 /* NotesDetailCell.swift */,
 			);
 			path = NotesDetailVC;
 			sourceTree = "<group>";
@@ -175,9 +216,29 @@
 			path = GlobalVariable;
 			sourceTree = "<group>";
 		};
+		8444B86E2126C2AF00404B89 /* ViewImageDetails */ = {
+			isa = PBXGroup;
+			children = (
+				8444B86F2126C2EA00404B89 /* ViewImageDetails.swift */,
+				8444B8712126C2F300404B89 /* ViewImageDetails.xib */,
+			);
+			path = ViewImageDetails;
+			sourceTree = "<group>";
+		};
+		84693894215652AF007EBD13 /* ViewContentNote */ = {
+			isa = PBXGroup;
+			children = (
+				84693899215653E5007EBD13 /* ViewContentNote.swift */,
+				8444B8742126D8C700404B89 /* ViewImageDetailsCell.xib */,
+				8469389521565318007EBD13 /* ViewContentNote.xib */,
+			);
+			path = ViewContentNote;
+			sourceTree = "<group>";
+		};
 		848C6E0E20E90A6D00874D1F = {
 			isa = PBXGroup;
 			children = (
+				8480021C212055CC003D2F6B /* READ_ME.swift */,
 				848C6E1920E90A6D00874D1F /* FunlifeNotes */,
 				848C6E1820E90A6D00874D1F /* Products */,
 				C9635989D8D25D1567EC8ED4 /* Pods */,
@@ -226,6 +287,7 @@
 				84176A6F210D9E8F00E5C51F /* HomeViewController.swift */,
 				843CCF21210C608400123479 /* PasscodeVC */,
 				843CCF29210C638300123479 /* NotesAddNewVC */,
+				84970D3421283D1E0048C78E /* NotesCreateVC */,
 				843CCF24210C628E00123479 /* NotesListVC */,
 				843CCF25210C629900123479 /* NotesDetailVC */,
 				843CCF26210C62C400123479 /* SettingsVC */,
@@ -264,6 +326,7 @@
 		848C6E3120E90C1A00874D1F /* Librarys */ = {
 			isa = PBXGroup;
 			children = (
+				8430FA172161137200681733 /* GrowingTextView.swift */,
 			);
 			path = Librarys;
 			sourceTree = "<group>";
@@ -273,6 +336,7 @@
 			children = (
 				843CCF34210C65E300123479 /* UIDevice+Ex.swift */,
 				843CCF32210C65DA00123479 /* BorderView.swift */,
+				84C23BDB2126A27D00AE9754 /* UILabel+Ex.swift */,
 				843CCF36210C673F00123479 /* ViewController+Ex.swift */,
 				84FBF809210F44CD00B00111 /* UIView+Ex.swift */,
 				84FBF80B210F6EDC00B00111 /* MyNavigationBar+Ex.swift */,
@@ -289,6 +353,15 @@
 			path = GlobalClass;
 			sourceTree = "<group>";
 		};
+		84901DF9217F105A004AA6D0 /* ViewEditNote */ = {
+			isa = PBXGroup;
+			children = (
+				84901DFA217F107A004AA6D0 /* ViewEditNoteSlide.xib */,
+				84901DFC217F1083004AA6D0 /* ViewEditNoteSlide.swift */,
+			);
+			path = ViewEditNote;
+			sourceTree = "<group>";
+		};
 		8491C761211A96AF00CAC08C /* NotesListCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +369,24 @@
 				8491C763211A96D500CAC08C /* NotesListCell.xib */,
 			);
 			path = NotesListCell;
+			sourceTree = "<group>";
+		};
+		84970D3421283D1E0048C78E /* NotesCreateVC */ = {
+			isa = PBXGroup;
+			children = (
+				84970D3521283D370048C78E /* NotesCreateVC.swift */,
+				84970D3721283D580048C78E /* NotesCreateStoryBoard.storyboard */,
+			);
+			path = NotesCreateVC;
+			sourceTree = "<group>";
+		};
+		84978738211DB1C70075B254 /* MenuNotesListCellView */ = {
+			isa = PBXGroup;
+			children = (
+				84978739211DB1F30075B254 /* MenuNotesListCellView.swift */,
+				8497873B211DB1FD0075B254 /* MenuNotesListCellView.xib */,
+			);
+			path = MenuNotesListCellView;
 			sourceTree = "<group>";
 		};
 		C9635989D8D25D1567EC8ED4 /* Pods */ = {
@@ -370,12 +461,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				84176A74210DB60300E5C51F /* MenuBottomBarView.xib in Resources */,
+				8444B8722126C2F300404B89 /* ViewImageDetails.xib in Resources */,
+				8444B8762126D8C700404B89 /* ViewImageDetailsCell.xib in Resources */,
+				8469389621565318007EBD13 /* ViewContentNote.xib in Resources */,
+				84970D3821283D580048C78E /* NotesCreateStoryBoard.storyboard in Resources */,
+				84901DFB217F107A004AA6D0 /* ViewEditNoteSlide.xib in Resources */,
 				848C6E2520E90A6D00874D1F /* LaunchScreen.storyboard in Resources */,
 				842622122119B207009E4719 /* ItemNavView.xib in Resources */,
 				8426220D2119B110009E4719 /* MenuNaviView.xib in Resources */,
+				8497873C211DB1FD0075B254 /* MenuNotesListCellView.xib in Resources */,
 				848C6E2220E90A6D00874D1F /* Assets.xcassets in Resources */,
 				848C6E2020E90A6D00874D1F /* Main.storyboard in Resources */,
 				84FBF806210F303900B00111 /* SettingStoryboard.storyboard in Resources */,
+				8429430C212462E300F85628 /* NotesDetailStoryBoard.storyboard in Resources */,
 				8491C765211A96D500CAC08C /* NotesListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,9 +487,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FunlifeNotes/Pods-FunlifeNotes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BGTableViewRowActionWithImage/BGTableViewRowActionWithImage.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BGTableViewRowActionWithImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -442,24 +545,34 @@
 				843CCF35210C65E400123479 /* UIDevice+Ex.swift in Sources */,
 				843CCF2B210C639800123479 /* NotesAddNewVC.swift in Sources */,
 				842622102119B1FE009E4719 /* ItemNavView.swift in Sources */,
+				84970D3621283D370048C78E /* NotesCreateVC.swift in Sources */,
 				843CCF39210C67B200123479 /* MyNavigationController.swift in Sources */,
 				84FBF80C210F6EDC00B00111 /* MyNavigationBar+Ex.swift in Sources */,
 				843CCF20210C607D00123479 /* BaseViewController.swift in Sources */,
 				84176A72210DB5F700E5C51F /* MenuBottomBarView.swift in Sources */,
 				843CCF28210C62E900123479 /* NotesListVC.swift in Sources */,
 				843CCF3B210C6E0900123479 /* CustomView.swift in Sources */,
+				8469389A215653E5007EBD13 /* ViewContentNote.swift in Sources */,
 				843CCF33210C65DA00123479 /* BorderView.swift in Sources */,
 				843CCF37210C673F00123479 /* ViewController+Ex.swift in Sources */,
+				8429430E212462FF00F85628 /* NotesDetailVC.swift in Sources */,
 				843CCF23210C615D00123479 /* PasscodeVC.swift in Sources */,
+				8480021D212055CC003D2F6B /* READ_ME.swift in Sources */,
 				8486BF4A210EDE3E00AEF7C3 /* GlobalVariable.swift in Sources */,
 				843CCF2F210C64C000123479 /* Utils.swift in Sources */,
+				84C23BDC2126A27E00AE9754 /* UILabel+Ex.swift in Sources */,
 				84FBF808210F403100B00111 /* NotesObj.swift in Sources */,
+				84901DFD217F1083004AA6D0 /* ViewEditNoteSlide.swift in Sources */,
 				8426220B2119B105009E4719 /* MenuNaviView.swift in Sources */,
+				8444B8702126C2EA00404B89 /* ViewImageDetails.swift in Sources */,
 				8491C764211A96D500CAC08C /* NotesListCell.swift in Sources */,
+				8469389E215659EB007EBD13 /* NotesDetailCell.swift in Sources */,
 				84FBF80A210F44CD00B00111 /* UIView+Ex.swift in Sources */,
+				8430FA182161137200681733 /* GrowingTextView.swift in Sources */,
 				84176A70210D9E8F00E5C51F /* HomeViewController.swift in Sources */,
 				842622142119B3A0009E4719 /* UIImage+EX.swift in Sources */,
 				8486BF48210EDDA400AEF7C3 /* SettingsVC.swift in Sources */,
+				8497873A211DB1F30075B254 /* MenuNotesListCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,11 +711,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3FXDDKW9VC;
+				DEVELOPMENT_TEAM = QWP6QJYY7H;
 				INFOPLIST_FILE = FunlifeNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vn.com.funlife.fnotes.ver1;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.com.funlife.fnotes.ver1test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -614,11 +729,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3FXDDKW9VC;
+				DEVELOPMENT_TEAM = QWP6QJYY7H;
 				INFOPLIST_FILE = FunlifeNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vn.com.funlife.fnotes.ver1;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.com.funlife.fnotes.ver1test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

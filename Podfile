@@ -6,5 +6,7 @@ target 'FunlifeNotes' do
   use_frameworks!
 
   # Pods for FunlifeNotes
+  pod 'PopupDialog'
+  pod "BGTableViewRowActionWithImage"
 
 end

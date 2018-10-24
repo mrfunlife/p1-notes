@@ -64,7 +64,7 @@ class PasscodeVC: BaseViewController, NumberPadViewDelegate {
             }
         }
         if validCode.count == 4 {
-            let vc = HomeViewController.fromStoryboard("Main")
+            let vc =  MyNavigationController.fromStoryboard("Main")
             vc.modalTransitionStyle = .flipHorizontal
             self.present(vc, animated: true, completion: nil)
         }
